@@ -13,8 +13,10 @@ add_action( 'woocommerce_product_options_general_product_data', 'woo_add_button_
 // Save the Settings Field
 add_action( 'woocommerce_process_product_meta', 'woo_save_button_text_field' );
 
-// Alter the buttons accordingly
+// Change Button Text on the Single Product Page
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'custom_woocommerce_product_add_to_cart_text' );
+
+// Change Button Text on the Archive Product Pages
 add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text' );
 
 /**
@@ -49,17 +51,17 @@ function woo_save_button_text_field( $post_id ) {
 }
 
 /**
- * Allows us to retrieve the custom values on a per product basis
- * 
- * @access public
- * @return string Either the custom text or defaults to 'Add to Cart'
+ * Change the button text on a per product basis
  */
 function custom_woocommerce_product_add_to_cart_text() {
+
 	$customText = get_post_meta( get_the_ID(), 'custom-add-to-cart-text', true );
 	
-	if ( empty( $customText ) )
+	if ( ! empty( $customText ) ) {
+		return $customText;
+	} else {
 		return __( 'Add to Cart', 'woocommerce' );
-		
-	// If we don't return anything then it defaults to what was already set, 
-	// this would allow someone else to override the text and us not mess it up down the road	
+	}
+
 }
+
