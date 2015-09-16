@@ -53,14 +53,14 @@ function woo_save_button_text_field( $post_id ) {
 /**
  * Change the button text on a per product basis
  */
-function custom_woocommerce_product_add_to_cart_text() {
+function custom_woocommerce_product_add_to_cart_text( $text ) {
 
 	$customText = get_post_meta( get_the_ID(), 'custom-add-to-cart-text', true );
 	
 	if ( ! empty( $customText ) ) {
 		return $customText;
 	} else {
-		return __( 'Add to Cart', 'woocommerce' );
+		return $text;
 	}
 
 }
