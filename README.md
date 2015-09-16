@@ -1,10 +1,8 @@
 # add-to-cart
 Add To Cart Button | Text Field in General Tab | Appears on Single Product Page | WooCommerce
 
-
-<iframe width="960" height="720" src="https://www.youtube.com/embed/0uriX3-jSls?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
-
-https://youtu.be/0uriX3-jSls <--As Explained in a more textual manner: 
+### https://youtu.be/0uriX3-jSls
+As Explained in a more textual manner: 
 
 The goal here is to have a simple text field in the general tab of Woo's single-product.php so that when the store owner is typing up their wonderful new product, they can customize text that appears on that particular product's page.
 Nope. Don't care about archive pages.
