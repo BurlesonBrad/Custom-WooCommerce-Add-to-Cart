@@ -1,3 +1,4 @@
+![](https://bradgriffin.me/git.png)
 # add-to-cart
 Add To Cart Button | Text Field in General Tab | Appears on Single Product Page | WooCommerce
 
@@ -10,4 +11,5 @@ Yep. I know there's other plugins that "claim" to do "parts" of this, but *this*
 Yes, I could do this all day with code snippets.
 
 The plugin is for WooCommerce store owners who simply need to change the "Add To Cart" text, and to give them a simple & easy way to do that.
+
 
