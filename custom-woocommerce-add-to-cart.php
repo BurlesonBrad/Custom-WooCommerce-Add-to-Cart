@@ -7,24 +7,20 @@ Contributors: BurlesonBrad
 Version: 1.0
 */
 
-// Display Fields
-add_action( 'woocommerce_product_options_general_product_data', 'woo_add_custom_general_fields' );
+// Add the Settings Field
+add_action( 'woocommerce_product_options_general_product_data', 'woo_add_button_text_field' );
 
-// Save Fields
-add_action( 'woocommerce_process_product_meta', 'woo_add_custom_general_fields_save' );
+// Save the Settings Field
+add_action( 'woocommerce_process_product_meta', 'woo_save_button_text_field' );
 
 // Alter the buttons accordingly
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'custom_woocommerce_product_add_to_cart_text' );
 add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text' );
 
 /**
- * Add our custom fields to the Edit Product page 
- * 
- * @access public
- * @return void
+ * Add the custom field to the Edit Product page 
  */
-function woo_add_custom_general_fields() { 
-	global $woocommerce, $post;
+function woo_add_button_text_field() { 
 	
 	echo '<div class="options_group">';
 	
@@ -40,18 +36,16 @@ function woo_add_custom_general_fields() {
 	);	
 	
 	echo '</div>';	
+
 }
 
 /**
  * Save our custom product fields
- * 
- * @access public
- * @param mixed $post_id
- * @return void
  */
-function woo_add_custom_general_fields_save( $post_id ) {	
-	// Save our custom Add to Cart text
-	update_post_meta( $post_id, 'custom-add-to-cart-text', esc_attr( $_POST['custom-add-to-cart-text'] ) ); // When empty we want to wipe it out
+function woo_save_button_text_field( $post_id ) {	
+
+	update_post_meta( $post_id, 'custom-add-to-cart-text', esc_attr( $_POST['custom-add-to-cart-text'] ) );
+
 }
 
 /**
