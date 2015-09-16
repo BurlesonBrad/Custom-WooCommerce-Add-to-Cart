@@ -1,7 +1,12 @@
 <?php
-//=======================================================
-//	Custom Add to Cart Buttons
-//=======================================================
+/*
+Plugin Name: Custom WooCommerce Add to Cart
+Description: A simple plugin to change the button text on a product per product basis.
+Author: Brad Griffen
+Contributors: BurlesonBrad
+Version: 1.0
+*/
+
 // Display Fields
 add_action( 'woocommerce_product_options_general_product_data', 'woo_add_custom_general_fields' );
 
