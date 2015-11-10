@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: burlesonbrad, icaleb
-Donate link: http://pippin-is-a-sexy-beast.org
+Donate link: http://bradgriffin.me
 Tags: woothemes, woocommerce, add to cart, custom add to cart button, 
 Requires at least: heck if I know... Caleb! Caleb? What goes here?
 Tested up to: 4.4
