@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Custom Add To Cart Text For WooCommerce With A Really Cool Interface ===
 Contributors: burlesonbrad, icaleb
 Donate link: http://bradgriffin.me
 Tags: woothemes, woocommerce, add to cart, custom add to cart button, 
