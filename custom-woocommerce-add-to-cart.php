@@ -2,7 +2,7 @@
 /*
 Plugin Name: Custom WooCommerce Add to Cart
 Description: A simple plugin to change the button text on a product per product basis.
-Author: Brad Griffen
+Author: Brad Griffin
 Contributors: BurlesonBrad
 Version: 1.0
 */
